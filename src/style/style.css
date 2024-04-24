@@ -29,24 +29,70 @@ main {
   margin: 20px;
 }
 
-.procent {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: -60px;
-  margin-top: -40px;
-  gap: 30px;
+/*VECTOR*/
+
+.vector12 {
+  margin-left: 20px;
+  margin-top: -10px;
 }
 
-.procent h1 {
-  font-size: 60px;
+.vector6 {
+  width: 50px;
+  margin-top: 20px;
 }
 
-.fact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin-top: 70px;
+.vector3,
+.vector11,
+.vector14,
+.vector1_,
+.saty,
+.vector0 {
+  display: flex;
+  margin-left: auto;
+  margin-top: -10px;
+  margin-right: 20px;
 }
+
+.vector0 {
+  width: 40px;
+}
+
+.vector3 {
+  margin-top: -107px;
+}
+
+.vector14 {
+  width: 80px;
+}
+
+.vector10 {
+  width: 40px;
+}
+
+.vector_11 {
+  margin-bottom: 100px;
+}
+
+.vector7 {
+  display: none;
+}
+
+.video2 {
+  margin-bottom: 100px;
+}
+
+.vector_11,
+.vector12,
+.vector3,
+.vector6,
+.vector11,
+.vector14 {
+  animation: rotate_self 4s linear infinite; /* Brug en ny animationsfunktion */
+}
+
+/*******************************************/
+
+/*ILLUSTRATIONER*/
 
 .first img {
   height: 80px;
@@ -55,12 +101,6 @@ main {
   align-items: center;
   margin: 0 auto;
   margin-top: -20px;
-}
-
-.lege {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 60px;
 }
 
 .nr1 {
@@ -76,12 +116,6 @@ main {
   margin-top: 30px;
 }
 
-.viden {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
 .item-a {
   background: hsl(60, 60%, 61%);
   background-image: url("billede.jpg");
@@ -90,15 +124,6 @@ main {
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: -27px;
-}
-
-.item-a p,
-.item-a h2,
-.item-b p,
-.item-b h2,
-.item-c p,
-.item-c h2 {
-  margin: 20px;
 }
 
 .item-b {
@@ -121,6 +146,105 @@ main {
   margin: -27px;
 }
 
+.vib_first {
+  width: 80px;
+  margin-top: -30px;
+}
+
+.vib_1 {
+  display: flex;
+  justify-content: center; /* Centrerer elementer vandret */
+  margin: 0 auto;
+  transform: rotate(30deg);
+  width: 60px;
+}
+
+.video,
+.video2 {
+  display: flex;
+  justify-content: center; /* Centrerer elementer vandret */
+  border-radius: 20px;
+  height: 174px;
+  width: 310px;
+  box-shadow: 7px 7px #ed4a5a;
+}
+
+.saty,
+.vib_1 {
+  animation: rotate_and_vibrate 0.1s alternate infinite; /* Hurtig animation med vibrationseffekt */
+}
+
+/*******************************************/
+
+/*KEYFRAMES*/
+
+@keyframes rotate_self {
+  0% {
+    transform: rotate(0deg); /* Startposition */
+  }
+  100% {
+    transform: rotate(360deg); /* Slutposition */
+  }
+}
+
+@keyframes rotate_and_vibrate {
+  0% {
+    transform: rotate(0deg) translateX(-1px); /* Startposition, roterer 0 grader og flytter 1px mod venstre */
+  }
+  50% {
+    transform: rotate(-5deg) translateX(1px); /* Halvvejspunkt, roterer 5 grader mod uret og flytter 1px mod højre */
+  }
+  100% {
+    transform: rotate(0deg) translateX(-1px); /* Slutposition, tilbage til start */
+  }
+}
+
+/*******************************************/
+
+/*ITEM*/
+
+.item-a p,
+.item-a h2,
+.item-b p,
+.item-b h2,
+.item-c p,
+.item-c h2 {
+  margin: 20px;
+}
+
+/*******************************************/
+
+.procent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: -60px;
+  margin-top: -40px;
+  gap: 30px;
+}
+
+.procent h1 {
+  font-size: 60px;
+}
+
+.fact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 70px;
+}
+
+.lege {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 60px;
+}
+
+.viden {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
 .spacer {
   height: 100vh;
 }
@@ -131,37 +255,6 @@ main {
 
 .vidste {
   margin-top: 60px;
-}
-
-.vector3,
-.vector11,
-.vector14,
-.vector1_,
-.saty {
-  display: flex;
-  margin-left: auto;
-  margin-top: -10px;
-}
-
-.vector14 {
-  width: 80px;
-}
-
-.vector10 {
-  width: 40px;
-}
-
-.vector_11 {
-  margin-bottom: 100px;
-}
-
-.video {
-  display: flex;
-  justify-content: center; /* Centrerer elementer vandret */
-  border-radius: 20px;
-  height: 174px;
-  width: 310px;
-  box-shadow: 7px 7px #ed4a5a;
 }
 
 @media (min-width: 800px) {
@@ -180,10 +273,78 @@ main {
     margin: 10px auto;
   }
 
+  .overskrift_1 {
+    margin-bottom: 100px;
+  }
+
+  .explain {
+    margin-bottom: 230px;
+  }
+
+  .fact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
+
+  .fed {
+    font-variation-settings: "wdth" 100, "wght" 1000;
+  }
+
+  /*VECTOR*/
+
+  .vector3 {
+    width: 200px;
+    margin-top: 100px;
+  }
+
+  .vector1_ {
+    margin-top: -140px;
+  }
+
+  .vector_11 {
+    margin-top: -100px;
+  }
+
+  .vector7 {
+    display: block;
+  }
+
+  .vector1 {
+    margin-top: 160px;
+  }
+
+  .vector12 {
+    display: flex;
+    justify-content: center; /* Centrerer elementer vandret */
+    margin: 0 auto;
+    transform: rotate(30deg);
+    width: 200px;
+  }
+
+  .vector0 {
+    width: auto;
+    margin-top: -100px;
+  }
+
+  .vector6 {
+    width: auto;
+  }
+
+  /********************************************/
+
+  /*ITEM*/
+
   .item-a,
   .item-b,
   .item-c {
     margin: -188px;
+  }
+
+  .item-c {
+    margin-top: 100px;
   }
 
   .item-a p,
@@ -195,31 +356,12 @@ main {
     margin: 20px 200px 20px 200px;
   }
 
-  .overskrift_1 {
-    margin-bottom: 100px;
-  }
+  /********************************************/
 
-  .explain {
-    margin-bottom: 230px;
-  }
+  /*ILLUSTRATIONER*/
 
-  .vector_11 {
-    margin-top: -100px;
-  }
-
-  .on {
-    margin-bottom: 150px;
-  }
-
-  .fact {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
-    margin-top: 70px;
-  }
-
-  .vidste1 {
-    margin-top: 100px;
+  .at {
+    margin-top: -50px;
   }
 
   .lege {
@@ -245,14 +387,38 @@ main {
 
   .saty {
     display: flex;
-    margin-right: auto;
-    margin-top: -10px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-right: 60px;
   }
 
-  .video {
+  .first img {
+    height: 160px;
+  }
+
+  .vib_1 {
+    width: 80px;
+  }
+
+  .vib_first {
+    display: none;
+  }
+
+  /********************************************/
+
+  /*VIDEO*/
+
+  .video,
+  .video2 {
     height: 563px;
     width: 1000px;
     box-shadow: 30px 30px #ed4a5a;
     margin-bottom: 150px;
   }
+
+  .video2 {
+    margin-bottom: 320px;
+  }
+
+  /**********************************************/
 }
