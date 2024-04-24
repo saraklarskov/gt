@@ -60,6 +60,7 @@ main {
 .lege {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 60px;
 }
 
 .nr1 {
@@ -154,6 +155,15 @@ main {
   margin-bottom: 100px;
 }
 
+.video {
+  display: flex;
+  justify-content: center; /* Centrerer elementer vandret */
+  border-radius: 20px;
+  height: 174px;
+  width: 310px;
+  box-shadow: 7px 7px #ed4a5a;
+}
+
 @media (min-width: 800px) {
   h1 {
     font-size: 60px;
@@ -183,5 +193,66 @@ main {
   .item-c p,
   .item-c h2 {
     margin: 20px 200px 20px 200px;
+  }
+
+  .overskrift_1 {
+    margin-bottom: 100px;
+  }
+
+  .explain {
+    margin-bottom: 230px;
+  }
+
+  .vector_11 {
+    margin-top: -100px;
+  }
+
+  .on {
+    margin-bottom: 150px;
+  }
+
+  .fact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin-top: 70px;
+  }
+
+  .vidste1 {
+    margin-top: 100px;
+  }
+
+  .lege {
+    margin-bottom: 100px;
+  }
+
+  .nr1 {
+    width: 80px;
+    height: auto;
+  }
+
+  .nr2 {
+    width: auto;
+    height: 200px;
+    margin-top: 100px;
+  }
+
+  .nr3 {
+    width: auto;
+    height: 200px;
+    margin-left: 100px;
+  }
+
+  .saty {
+    display: flex;
+    margin-right: auto;
+    margin-top: -10px;
+  }
+
+  .video {
+    height: 563px;
+    width: 1000px;
+    box-shadow: 30px 30px #ed4a5a;
+    margin-bottom: 150px;
   }
 }
